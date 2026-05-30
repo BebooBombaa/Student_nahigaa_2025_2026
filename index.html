@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختر صفك الدراسي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== الشعار ===== */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+            transition: all 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 8px 25px rgba(233, 69, 96, 0.5));
+        }
+
+        /* ===== العنوان ===== */
+        h1 {
+            color: #e94560;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            margin-top: 100px;
+        }
+
+        /* ===== الأزرار ===== */
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 20px 80px;
+            font-size: 1.5rem;
+            font-family: 'Cairo', sans-serif;
+            font-weight: bold;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            min-width: 350px;
+        }
+
+        .btn-1 {
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: white;
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+        }
+
+        .btn-1:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.6);
+        }
+
+        .btn-2 {
+            background: linear-gradient(135deg, #0f3460, #1a1a2e);
+            color: #e94560;
+            border: 2px solid #e94560;
+            box-shadow: 0 5px 20px rgba(15, 52, 96, 0.4);
+        }
+
+        .btn-2:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: #e94560;
+            color: white;
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.6);
+        }
+
+        .btn-3 {
+            background: linear-gradient(135deg, #533483, #2c061f);
+            color: white;
+            box-shadow: 0 5px 20px rgba(83, 52, 131, 0.4);
+        }
+
+        .btn-3:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(83, 52, 131, 0.6);
+        }
+
+        /* ===== للتجاوب مع الموبايل ===== */
+        @media (max-width: 768px) {
+            .logo img {
+                width: 120px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin-top: 80px;
+            }
+
+            .btn {
+                min-width: 280px;
+                padding: 18px 60px;
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ✅ الشعار في أعلى الصفحة -->
+    <div class="logo">
+        <img src="logo.png" alt="شعار المدرسة">
+    </div>
+
+    <h1>📚 اختر صفك الدراسي</h1>
+
+    <div class="buttons-container">
+        <a href="index1.html" class="btn btn-1">الصف الأول الثانوى</a>
+        <a href="index2.html" class="btn btn-2">الصف الثانى علمى</a>
+        <a href="index3.html" class="btn btn-3">الصف الثانى أدبى</a>
+    </div>
+
+</body>
+</html>
