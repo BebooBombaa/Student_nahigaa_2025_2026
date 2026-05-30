@@ -236,9 +236,9 @@
                 cache: "no-store"
             });
 
-            students2 = await res.json();
+            students3 = await res.json();
 
-            localStorage.setItem("students3", JSON.stringify(students2));
+            localStorage.setItem("students3", JSON.stringify(students3));
             localStorage.setItem("students3_time", now);
 
             isLoaded = true;
@@ -257,7 +257,7 @@
 
             const q = document.getElementById("searchInput").value.trim();
 
-            const student = students2.find(s =>
+            const student = students3.find(s =>
                 Object.values(s).some(v => String(v).includes(q))
             );
 
